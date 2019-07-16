@@ -2,13 +2,13 @@
 
 ;; Place your private configuration here
 
-(after! neotree
-  (setq doom-themes-neotree-file-icons 'icons)
-  (setq doom-themes-neotree-enable-file-icons 'icons)
-  (setq neo-theme 'icons))
+;(after! neotree
+ ; (setq doom-themes-neotree-file-icons 'icons)
+  ;(setq doom-themes-neotree-enable-file-icons 'icons)
+  ;(setq neo-theme 'icons))
 
-(after! doom-themes
-  (setq doom-neotree-file-icons t))
+;(after! doom-themes
+  ;(setq doom-neotree-file-icons t))
 
 (after! ivy
   (setq ivy-re-builders-alist
@@ -23,6 +23,8 @@
   (projectile-mode)
   (projectile-load-known-projects))
 
+(after! company
+  (setq company-idle-delay 0))
 
 (def-package! rust-mode
   :mode "\\.rs$"
