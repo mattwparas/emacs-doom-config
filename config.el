@@ -72,7 +72,8 @@
   :config
   (company-mode)
   (flycheck-mode)
-  (rainbow-delimiters-mode))
+  (rainbow-delimiters-mode)
+  (racket-unicode-input-method-enable))
 
 (def-package! aggressive-indent
   :hook
